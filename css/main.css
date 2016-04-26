@@ -74,6 +74,15 @@ main > [name="services"] .space {
   margin-top: 15px;
   margin-bottom: 25px;
 }
+main > [name="services"] .icon {
+  height: 60px;
+}
+main > [name="services"] .icon img {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
 main > [name="services"] .title {
   margin: 0 auto;
   text-align: center;
