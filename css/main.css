@@ -26,7 +26,7 @@ main > section {
   font-size: 0.9rem;
 }
 main > section h1 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 main > .divider {
   margin-top: 20px;
@@ -49,12 +49,22 @@ main > [name='application'] img + p {
   font-size: .8rem;
   margin-top: 15px;
 }
+main > [name="team"] .item {
+  text-align: center;
+}
+main > [name="team"] .item .title {
+  margin-top: 10px;
+}
+main > [name="team"] .item .title img {
+  width: 15%;
+}
 main > [name="team"] .item > img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   padding: 5px;
   border: 1px solid black;
+  margin: 0 auto;
 }
 main > [name="team"] .item p img {
   display: block;
@@ -88,4 +98,30 @@ main > [name="adventages"] .title {
 }
 main > [name="adventages"] .small-5 img {
   width: 100%;
+}
+main > [name="cases"] .item {
+  width: 20%;
+  display: inline-block;
+  margin-right: -4px;
+  padding: 10px;
+}
+.slick-prev {
+  background-image: url(../img/left_btn.png) !important;
+  background-size: 50px !important;
+  width: 50px !important;
+  height: 50px !important;
+  background-repeat: no-repeat !important;
+}
+.slick-prev:before {
+  content: '' !important;
+}
+.slick-next {
+  background-image: url(../img/right_btn.png) !important;
+  background-size: 50px !important;
+  width: 50px !important;
+  height: 50px !important;
+  background-repeat: no-repeat !important;
+}
+.slick-next:before {
+  content: '' !important;
 }

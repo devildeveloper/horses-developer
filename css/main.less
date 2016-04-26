@@ -26,7 +26,7 @@ main{
 	&>section{
 		font-size: 0.9rem;
 		h1{
-			font-size:1.5rem;
+			font-size:1.6rem;
 		}
 	}
 	&>.divider{
@@ -54,12 +54,20 @@ main{
 	}
 	&>[name="team"]{
 		.item{
+			text-align: center;
+			.title{
+				margin-top:10px;
+				img{
+					width: 15%;
+				}
+			}
 			&>img{
 				width: 150px;
 				height: 150px;
 				border-radius: 50%;
 				padding:5px;
 				border:1px solid black;
+				margin: 0 auto;
 			}
 			p{
 				img{
@@ -101,5 +109,34 @@ main{
 		.small-5 img{
 			width:100%;
 		}
+	}
+	&>[name="cases"]{
+		.item{
+			width:20%;
+			display: inline-block;
+			margin-right: -4px;
+			padding: 10px;
+		}
+	}
+}
+//slick override
+.slick-prev{
+	background-image: url(../img/left_btn.png) !important;
+	background-size: 50px !important;
+	width:50px !important;
+	height:50px !important;
+	background-repeat:no-repeat !important;
+	&:before{
+		content:'' !important;
+	}
+}
+.slick-next{
+	background-image: url(../img/right_btn.png) !important;
+	background-size: 50px !important;
+	width:50px !important;
+	height:50px !important;
+	background-repeat:no-repeat !important;
+	&:before{
+		content:'' !important;
 	}
 }

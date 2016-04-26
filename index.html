@@ -5,6 +5,8 @@
 	<title>Horses Developer</title>
 	<link rel="stylesheet" href="css/foundation.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="js/vendor/slick/slick.css">
+	<link rel="stylesheet" href="js/vendor/slick/slick-theme.css">
 </head>
 <body>
 	<main>
@@ -79,64 +81,56 @@
 			<div class="row">
 				<div class="small-12 column text-center">
 					<h1>Nosotros</h1>
-					<img src="" alt="line">
+					<img src="img/purple_line.png" alt="line">
 				</div>
 			</div>
 			<div class="row">
 				<div class="small-10 small-offset-1 column">
-					<div class="row">
-						<div class="small-12 medium-3 column">
-							<div class="item text-center">
-								<img src="img/boy_1.png" alt="member photo">
-								<p class="title">
-									Bill Murray
-									<img src="" alt="line">
-								</p>
-								<p class="bio">
-									Lorem ipsum dolor sit amet, 
-									consectetur adipisicing.
-								</p>						
-							</div>					
+					<div class="slider">
+						<div class="item text-center">
+							<img src="img/boy_1.png" alt="member photo">
+							<p class="title">
+								Bill Murray
+								<img src="img/purple_line.png" alt="line">
+							</p>
+							<p class="bio">
+								Lorem ipsum dolor sit amet, 
+								consectetur adipisicing.
+							</p>										
 						</div>
-						<div class="small-12 medium-3 column">
-							<div class="item text-center">
-								<img src="img/boy_2.png" alt="member photo">
-								<p class="title">
-									Bill Murray
-									<img src="" alt="line">
-								</p>
-								<p class="bio">
-									Lorem ipsum dolor sit amet, 
-									consectetur adipisicing.
-								</p>						
-							</div>					
-						</div>
-						<div class="small-12 medium-3 column">
-							<div class="item text-center">
-								<img src="img/boy_3.png" alt="member photo">
-								<p class="title">
-									Bill Murray
-									<img src="" alt="line">
-								</p>
-								<p class="bio">
-									Lorem ipsum dolor sit amet, 
-									consectetur adipisicing.
-								</p>						
-							</div>					
-						</div>
-						<div class="small-12 medium-3 column">
-							<div class="item text-center">
-								<img src="img/boy_4.png" alt="member photo">
-								<p class="title">
-									Bill Murray
-									<img src="" alt="line">
-								</p>
-								<p class="bio">
-									Lorem ipsum dolor sit amet, 
-									consectetur adipisicing.
-								</p>						
-							</div>					
-						</div>						
+						<div class="item text-center">
+							<img src="img/boy_2.png" alt="member photo">
+							<p class="title">
+								Bill Murray
+								<img src="img/purple_line.png" alt="line">
+							</p>
+							<p class="bio">
+								Lorem ipsum dolor sit amet, 
+								consectetur adipisicing.
+							</p>						
+						</div>					
+						<div class="item text-center">
+							<img src="img/boy_3.png" alt="member photo">
+							<p class="title">
+								Bill Murray
+								<img src="img/purple_line.png" alt="line">
+							</p>
+							<p class="bio">
+								Lorem ipsum dolor sit amet, 
+								consectetur adipisicing.
+							</p>						
+						</div>					
+						<div class="item text-center">
+							<img src="img/boy_4.png" alt="member photo">
+							<p class="title">
+								Bill Murray
+								<img src="img/purple_line.png" alt="line">
+							</p>
+							<p class="bio">
+								Lorem ipsum dolor sit amet, 
+								consectetur adipisicing.
+							</p>						
+						</div>											
 					</div>
 				</div>												
 			</div>
@@ -291,7 +285,34 @@
 					<img src="" alt="line">
 				</div>
 			</div>
+			<div class="row">
+				<div class="small-12 column">
+					<div class="slider">
+						<div class="item">
+							<img src="" alt="mimmo">
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/slick/slick.min.js"></script>
+	<script>
+		$(document).on('ready',function(){
+			$("[name='team'] .slider").slick({
+				slidesToShow:4,
+				arrows:true,
+				dots:true
+			})
+			$("[name='cases'] .slider").slick({
+				centerMode: true,
+  				centerPadding: '60px',
+  				slidesToShow: 3,
+				arrows:true,
+				dots:true				  
+			})
+		})
+	</script>
 </body>
 </html>
