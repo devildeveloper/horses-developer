@@ -112,10 +112,16 @@ main{
 	}
 	&>[name="cases"]{
 		.item{
-			width:20%;
-			display: inline-block;
-			margin-right: -4px;
-			padding: 10px;
+			vertical-align: middle;
+		}
+		h1{
+			&+img{
+				width: 5%;
+			}
+		}
+		img{
+			width: 50%;
+			margin: 0 auto;
 		}
 	}
 }
@@ -138,5 +144,10 @@ main{
 	background-repeat:no-repeat !important;
 	&:before{
 		content:'' !important;
+	}
+}
+.slick-center{
+	img{
+		width: 55% !important;
 	}
 }
